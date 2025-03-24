@@ -1,16 +1,16 @@
-Hierarchy Modeling - 3D WebGL Project
+## Hierarchy Modeling - 3D WebGL Project
 
 Une application 3D interactive en WebGL pur qui met en scène un robot humanoïde animé, avec une architecture modulaire et des contrôles avancés.
 
-🌟 Présentation
+## Présentation
 
 Projet expérimental mettant en œuvre un moteur 3D en WebGL, sans frameworks. Il met en valeur :
-✔️ Modélisation hiérarchique pour structurer les parties du robot
-✔️ Gestion avancée des animations (cinématiques et transformations)
-✔️ Contrôles interactifs via un gestionnaire de caméra et d'événements
-✔️ Sélection et interaction 3D avec un système de picking WebGL
-✔️ Application React intégrant WebGL pour une interface fluide
-✔️ Architecture modulaire inspirée des moteurs de jeux
+[] Modélisation hiérarchique pour structurer les parties du robot
+[] Gestion avancée des animations (cinématiques et transformations)
+[] Contrôles interactifs via un gestionnaire de caméra et d'événements
+[] Sélection et interaction 3D avec un système de picking WebGL
+[] Application React intégrant WebGL pour une interface fluide
+[] Architecture modulaire inspirée des moteurs de jeux
 
 🛠️ Technologies utilisées
 
