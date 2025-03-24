@@ -1,4 +1,4 @@
-import Event from "../10_Hierarchy/Event";
+import Event from "../Event";
 import { camera, identite, multiply3DMatrix, orthogonalProjection, perspectiveProjection, rotatey, translate } from "../Tools/3DMatrix";
 import Matrix, { arrayToMatrix } from "../Tools/Matrix";
 import Vector, { cross_product } from "../Tools/Vector";

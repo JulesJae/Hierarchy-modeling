@@ -1,19 +1,17 @@
-import Camera from "../lib/Camera";
-import { initWebGL } from "../lib/WebGL/Utility";
+import Camera from "./lib/Camera";
+import { initWebGL } from "./lib/WebGL/Utility";
 import AnimationManager from "./Animation/AnimationManager";
 import JumpAnimation from "./Animation/JumpAnimation";
 import RestAnimation from "./Animation/RestAnimation";
 import RunAnimation from "./Animation/RunAnimation";
-import CubeDrawingProgram from "./CubeDrawingProgram";
 import Event from "./Event";
 import HumanRobot from "./HumanRobot";
 import Manipulator from "./Manipulator/Manipulator";
 import OrbitManipulator from "./Manipulator/OrbitManipulator";
-import Shader10 from "../Shaders/10"
-import PickingShader from "../Shaders/picking";
-import { initShaderProgram } from "../Tools/Shader";
+import Shader10 from "./Shaders/10"
+import PickingShader from "./Shaders/picking";
+import { initShaderProgram } from "./Tools/Shader";
 import PickingTexture from "./Core/PickingTexture";
-import Mesh from "./Core/Mesh/Mesh";
 import Part from "./Model/Part";
 
 function initAnimationManager(humanRobot: HumanRobot): AnimationManager {
@@ -52,7 +50,6 @@ class WebGLViewer extends Event {
     this.camera = new Camera(65, this.ar, 0.001, 1000);
     this.render = this.render.bind(this);
     this.fps = 0;
-    this.drawingProgram = new CubeDrawingProgram(this.gl, this.camera);
     this.hr = new HumanRobot(this.gl);
     this.animationManager = initAnimationManager(this.hr);
     this.manipulator = new OrbitManipulator(this.gl, this.camera, this.animationManager);
